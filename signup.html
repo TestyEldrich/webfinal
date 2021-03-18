@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf=utf-8">
+    <meta name="description" content="Register">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body style="background-image: url('https://i.ytimg.com/vi/UNOmaFs6KaY/maxresdefault.jpg')">
+    <div id="header">
+      <div id="logo">
+        <img src="https://hydeparkangels.com/wp-content/uploads/2016/05/Brilliant_Logo1.png" width="180px">
+      </div>
+      <div class="pagelink">
+        <a href="main.html">Today</a>
+      </div>
+      <div class="pagelink">
+        <a href="courses.html">Courses</a>
+      </div>
+      <div class="pagelink">
+        <a href="practice.html">Practice</a>
+      </div>
+      <div id="login">
+        <a href="login.html" style="color: rgb(0, 151, 236)">Log in</a>
+      </div>
+      <div id="signup">
+        <a href="signup.html" style="color: white">Sign up</a>
+      </div>
+    </div>
+    <div class="registerpage">
+      <br>
+      <h2 style="text-align: center">REGISTRATION</h2>
+      <br><br><br>
+      <form>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="E-mail" id="email"/>
+			<div class="invalid-feedback">
+				Email should follow all the requirements of existing emails (gmail, Yandex, yahoo, mail, etc)
+			</div>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="First name" id="firstname"/>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Last name" id="lastname"/>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Password" id="password"/>
+			<div class="invalid-feedback">
+				Password consist of at least 8 symbols, it must contain numbers, both lowercase and uppercase letters, and special symbols
+			</div>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="Confirm password" id="passwordconfirm"/>
+		</div>
+      </form>
+      <br>
+      <p><input type="checkbox"> I agree to the <span style="text-decoration: underline">Privacy Policy</span></p><br>
+	  <div style="margin-left: 40%;">
+		<button class="btn btn-primary padding" type="submit" onclick="checkinput();" style="margin:auto;">Register</button>
+	  </div>
+    </div>
+	<script src="javascript.js"></script>
+  </body>
+</html>
